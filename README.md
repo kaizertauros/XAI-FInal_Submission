@@ -1,4 +1,4 @@
-# XAI Fraud Detection — SHAP vs DiCE
+# XAI Fraud Detection: SHAP vs DiCE
 
 This is the final course assignment for the course "Explainable AI", of the Artificial Intelligence study at Radboud University. This project compares two explainability methods (SHAP and DiCE) applied to a fraud detection model.
 
