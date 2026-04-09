@@ -22,13 +22,22 @@ The file should be named: `synthetic_fraud_dataset.csv`
 Open `XAI_Notebook.ipynb` and run all cells in order from top to bottom.
 
 ## Structure
+## Structure
 
+### Section 1 - Imports
 - Cell 1: Install dependencies (Colab only)
 - Cell 2: Imports
-- Cell 3: Load and explore dataset
-- Cell 4: Preprocessing
-- Cell 5: Train baseline Random Forest
-- Cell 6: Address synthetic data limitations, retrain
-- Cell 7: SHAP global explanation
-- Cell 8: SHAP local explanation
-- Cell 9: DiCE counterfactual explanations
+
+### Section 2 - Original dataset (with risk scores)
+- Cell 3: Load and preview dataset
+- Cell 4: Preprocessing and train/test split
+- Cell 5: Train baseline Random Forest and confusion matrix
+- Cell 6: SHAP global explanation
+- Cell 7: SHAP local explanation
+- Cell 8: DiCE counterfactual explanations
+
+### Section 3 - Reduced dataset (without risk scores, noise added)
+- Cell 9: Drop risk score features, add noise, retrain
+- Cell 10: SHAP global explanation
+- Cell 11: SHAP local explanation
+- Cell 12: DiCE counterfactual explanations
